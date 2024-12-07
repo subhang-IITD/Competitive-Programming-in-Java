@@ -10,3 +10,9 @@ void reducedFrac(pair p){
     p.x /=g; p.y /=g; 
 }
 
+pair p1 = new pair(3, 4);  // Represents the fraction 3/4
+pair p2 = new pair(6, 8);  // Represents the fraction 6/8
+int result = fracCompare(p1, p2);  // result will be 0 (because 3/4 == 6/8)
+
+pair p = new pair(6, 8);  // Represents the fraction 6/8
+reducedFrac(p);           // Now p is reduced to 3/4
